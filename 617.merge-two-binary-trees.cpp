@@ -29,6 +29,7 @@ public:
             return root1;
         }
 
+        // using DFS to merge
         root1->val = root1->val + root2->val;
         root1->left = mergeTrees(root1->left, root2->left);
         root1->right = mergeTrees(root1->right, root2->right);
