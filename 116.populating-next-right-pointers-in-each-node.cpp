@@ -23,6 +23,7 @@ public:
 };
 */
 
+// using the BFS traversal
 class Solution {
 public:
     Node* connect(Node* root) {
@@ -45,6 +46,7 @@ public:
             {
                 tempNode = q.front();
                 q.pop();
+                // if the last node in this layer, pointing to nullptr
                 if (counter == currQSize-1)
                 {
                     tempNode->next = nullptr;
@@ -54,6 +56,7 @@ public:
                     tempNode->next = q.front();
                 }
 
+                // if the current node has children, push its children into queue
                 if (tempNode->left)
                 {
                 q.push(tempNode->left);
