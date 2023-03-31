@@ -30,6 +30,10 @@
         "thread": "cpp",
         "functional": "cpp",
         "tuple": "cpp",
-        "variant": "cpp"
+        "variant": "cpp",
+        "deque": "cpp",
+        "list": "cpp",
+        "iterator": "cpp",
+        "scoped_allocator": "cpp"
     }
 }
